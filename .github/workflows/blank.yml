@@ -36,6 +36,6 @@ jobs:
           echo test, and deploy your project.
           python3 -V
           wget https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz
-          python3 app.py
+          python3 app.py -token ${{ secrets.TOKEN }}
           python3 -c 'import os, json; print(json.dumps(os.listdir(".")))'
           python3 app.py
