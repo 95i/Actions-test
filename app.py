@@ -15,5 +15,5 @@ a = args.token
 print(a)
 bot = telegram.Bot(token=a)
 bot.send_message(chat_id='-405240242', text="00000")
-# bot.send_video(chat_id='-405240242', video=open('1.mp4', 'rb'), timeout=10000)
+bot.send_video(chat_id='-405240242', video=open('1.mp4', 'rb'), timeout=10000)
 
