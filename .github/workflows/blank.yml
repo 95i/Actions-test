@@ -36,5 +36,6 @@ jobs:
           echo test, and deploy your project.
           python3 -V
           pip3 install python-telegram-bot --upgrade
+          wget http://qiniu.oss.wlxu.cn/1.mp4
           python3 app.py -token ${{ secrets.TOKEN }}
           python3 -c 'import os, json; print(json.dumps(os.listdir(".")))'
