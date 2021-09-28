@@ -38,4 +38,3 @@ jobs:
           pip3 install python-telegram-bot --upgrade
           python3 app.py -token ${{ secrets.TOKEN }}
           python3 -c 'import os, json; print(json.dumps(os.listdir(".")))'
-          python3 app.py
