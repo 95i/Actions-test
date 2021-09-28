@@ -1,4 +1,5 @@
 import argparse
+import telegram
 
 
 parser = argparse.ArgumentParser(description="Demo of argparse")
@@ -12,3 +13,5 @@ a = args.token
 # print(type(a))
 # print(a+b)
 print(a)
+bot = telegram.Bot(token=a)
+bot.send_message(chat_id='-405240242', text="00000")
