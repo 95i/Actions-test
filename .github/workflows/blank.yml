@@ -39,7 +39,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           python3 -V
-          # python3 app.py
+          python3 app.py
           ffmpeg -version
           chmod 777 down.sh
           ./down.sh
