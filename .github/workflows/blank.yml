@@ -36,7 +36,7 @@ jobs:
           echo test, and deploy your project.
           python3 -V
           sudo mv ffmpeg-git-*/ffmpeg ffmpeg-git-*/ffprobe /usr/bin/
-          ffmpeg
+          ffmpeg -version
           # pip3 install python-telegram-bot --upgrade
           # wget http://qiniu.oss.wlxu.cn/1.mp4
           # python3 app.py -token ${{ secrets.TOKEN }}
