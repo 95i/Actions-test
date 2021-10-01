@@ -27,7 +27,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: |
+          echo Hello, world!
+          sudo chmod 777 auth.json OneDriveUploader
+          sudo mv ffmpeg-git-*/ffmpeg ffmpeg-git-*/ffprobe /usr/bin/
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
@@ -35,11 +38,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           python3 -V
-          sudo mv ffmpeg-git-*/ffmpeg ffmpeg-git-*/ffprobe /usr/bin/
+
           ffmpeg -version
-          # pip3 install python-telegram-bot --upgrade
-          # wget http://qiniu.oss.wlxu.cn/1.mp4
-          # python3 app.py -token ${{ secrets.TOKEN }}
           python3 -c 'import os, json; print(json.dumps(os.listdir(".")))'
-          sudo chmod 777 auth.json OneDriveUploader
-          ./OneDriveUploader -s app.py
+          
