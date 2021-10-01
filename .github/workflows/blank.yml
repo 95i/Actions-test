@@ -38,7 +38,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           python3 -V
-
+          python3 app.py
           ffmpeg -version
           python3 -c 'import os, json; print(json.dumps(os.listdir(".")))'
           
