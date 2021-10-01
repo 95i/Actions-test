@@ -4,7 +4,7 @@ import re
 
 # 链接
 # a = input("请输入链接：")
-url = requests.get('https://madou.club/hongkongdoll-%e5%85%ac%e5%85%b1%e5%9c%ba%e5%90%88%e7%9a%84%e6%80%a7%e7%88%b1.html').text
+url = requests.get('https://madou.club/hongkongdoll-%e7%ba%af%e7%88%b1%e7%b3%bb%e5%88%97%e7%9f%ad%e7%89%87-%e7%99%bd%e4%b8%9d%e8%af%b1%e6%83%91.html').text
 # url = requests.get(a).text
 # print(url)
 
