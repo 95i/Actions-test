@@ -39,7 +39,7 @@ print(key)
 
 
 # 保存m3u8文件
-fd = open(title + '.m3u8', "w", encoding='utf-8') # 文件创建111文件
+fd = open('index.m3u8', "w", encoding='utf-8') # 文件创建111文件
 key11 = video_url.replace('share', 'videos').replace('dash.madou.club', 'dash.madou.club/')
 fd.write(m3u8_url.replace(key11, '').replace('/ts.key', 'ts.key'))
 
