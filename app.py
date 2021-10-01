@@ -37,6 +37,10 @@ m3u8_url = requests.get(m3u8).text
 key = video_url.replace('share', 'videos')
 print(key)
 
+# 保存key
+key2 = requests.get(key + '/ts.key').text
+fd = open('ts.key', "w", encoding='utf-8')
+fd.write(key2)
 
 # 保存m3u8文件
 fd = open('index.m3u8', "w", encoding='utf-8') # 文件创建111文件
