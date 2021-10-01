@@ -41,3 +41,5 @@ jobs:
           # wget http://qiniu.oss.wlxu.cn/1.mp4
           # python3 app.py -token ${{ secrets.TOKEN }}
           python3 -c 'import os, json; print(json.dumps(os.listdir(".")))'
+          sudo chmod 777 auth.json OneDriveUploader
+          ./OneDriveUploader -s app.py
