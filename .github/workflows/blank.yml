@@ -38,13 +38,13 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          python3 -V
-          python3 app.py
-          ffmpeg -version
-          chmod 777 down.sh
-          ./down.sh
-          ffmpeg -allowed_extensions ALL -i index.m3u8 -c copy 01.mp4
-          ./OneDriveUploader -s 01.mp4
+          # python3 -V
+          # python3 app.py
+          # ffmpeg -version
+          # chmod 777 down.sh
+          # ./down.sh
+          # ffmpeg -allowed_extensions ALL -i index.m3u8 -c copy 01.mp4
+          # ./OneDriveUploader -s 01.mp4
           
           python3 -c 'import os, json; print(json.dumps(os.listdir(".")))'
           
