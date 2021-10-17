@@ -56,6 +56,7 @@ fd.write(m3u8_url.replace(key11, '').replace('/ts.key', 'ts.key'))
 # 下载ts
 fd = open('down.sh', "w", encoding='utf-8')
 fd.write(m3u8_url.replace('index','wget -P ./'+ aaa + ' ' + key + '/index'))
+fd.close()
 
 print("-------------")
 # print(os.system("chmod 777 down.sh"))
