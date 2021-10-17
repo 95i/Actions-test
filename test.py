@@ -2,6 +2,8 @@ import requests
 import parsel
 import re
 import os
+import subprocess
+
 
 # 链接
 # a = input("请输入链接：")
