@@ -52,7 +52,7 @@ fd.write(m3u8_url.replace(key11, '').replace('/ts.key', 'ts.key'))
 fd = open('down.sh', "w", encoding='utf-8')
 fd.write(m3u8_url.replace('index','wget ' + key + '/index'))
 
-print(ftp(aaa))
+print(ftp.ftp(aaa))
 
 
 
