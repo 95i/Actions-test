@@ -47,7 +47,7 @@ jobs:
           # ./OneDriveUploader -s 01.mp4
           
           
-          python3 test.py
+          # python3 test.py
           
           python3 -c 'import os, json; print(json.dumps(os.listdir(".")))'
           
