@@ -1,6 +1,7 @@
 import requests
 import parsel
 import re
+import ftp
 
 # 链接
 # a = input("请输入链接：")
@@ -50,6 +51,8 @@ fd.write(m3u8_url.replace(key11, '').replace('/ts.key', 'ts.key'))
 # 下载ts
 fd = open('down.sh', "w", encoding='utf-8')
 fd.write(m3u8_url.replace('index','wget ' + key + '/index'))
+
+print(ftp(aaa))
 
 
 
