@@ -55,7 +55,7 @@ fd.write(m3u8_url.replace(key11, '').replace('/ts.key', 'ts.key'))
 fd = open('down.sh', "w", encoding='utf-8')
 fd.write(m3u8_url.replace('index','wget -P ./'+ aaa + ' ' + key + '/index'))
 
-
+print("-------------")
 print(os.system("chmod 777 down.sh"))
 print(os.system("./down.sh"))
-
+print("-------------")
