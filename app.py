@@ -5,7 +5,7 @@ import ftp
 
 # 链接
 # a = input("请输入链接：")
-url = requests.get('https://madou.club/91%e5%88%b6%e7%89%87%e5%8e%82-%e5%b0%91%e5%a5%b3%e7%9a%84%e6%82%94%e6%82%9f-%e6%bd%98%e7%94%9c%e7%94%9c-av%e5%bc%95%e9%80%80.html').text
+url = requests.get('https://madou.club/%e8%8a%b1%e7%b5%aemd0105-%e7%97%b4%e6%b1%89%e5%b0%be%e9%9a%8f%e5%bc%ba%e5%88%b6%e6%80%a7%e4%ba%a4-%e5%ba%9f%e5%a2%9f%e5%86%85%e7%81%ab%e7%88%86%e7%a1%ac%e4%b8%8a.html').text
 # url = requests.get(a).text
 # print(url)
 
