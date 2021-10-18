@@ -65,6 +65,8 @@ print("-------------")
 # print(os.system("./down.sh"))
 print(subprocess.getoutput('chmod 777 down.sh'))
 print(subprocess.getoutput('./down.sh'))
+jpg = str(re.findall(u"shareimage      (.+?)',".encode('utf8'),url.encode('utf8'))).replace('[b": ', '').replace('"]', '').replace("'", '')
+print(subprocess.getoutput('wget -P '+ aaa + ' ' + jpg))
 print("-------------")
 
 print(ftp.ftp(aaa))
