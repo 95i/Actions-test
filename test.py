@@ -7,7 +7,7 @@ import ftp
 
 # 链接
 # a = input("请输入链接：")
-url = requests.get('https://madou.club/hongkongdoll-%e6%a3%ae%e6%9e%97-%e7%ac%ac%e4%ba%8c%e9%9b%86-%e6%ac%ba%e9%aa%97.html').text
+url = requests.get('https://madou.club/hongkongdoll-%e6%99%a8%e9%92%9f-%e6%9a%ae%e9%bc%93.html').text
 # url = requests.get(a).text
 # print(url)
 
@@ -51,6 +51,7 @@ fd = open(aaa + '/' + 'ts.key', "w", encoding='utf-8')
 fd.write(key2)
 
 # 保存m3u8文件
+fd = open(aaa+ "/" + title + '.m3u8', "w", encoding='utf-8') # 文件创建111文件
 fd = open(aaa + '/' + 'index.m3u8', "w", encoding='utf-8') # 文件创建111文件
 key11 = video_url.replace('share', 'videos').replace('dash.madou.club', 'dash.madou.club/')
 fd.write(m3u8_url.replace(key11, '').replace('/ts.key', 'ts.key'))
