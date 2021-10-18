@@ -43,13 +43,15 @@ m3u8_url = requests.get(m3u8).text
 key = video_url.replace('share', 'videos')
 print(key)
 
+os.mkdir(aaa)
+
 # 保存key
 key2 = requests.get(key + '/ts.key').text
-fd = open('ts.key', "w", encoding='utf-8')
+fd = open(aaa + '/' + 'ts.key', "w", encoding='utf-8')
 fd.write(key2)
 
 # 保存m3u8文件
-fd = open(title + '.m3u8', "w", encoding='utf-8') # 文件创建111文件
+fd = open(aaa + '/' + title + '.m3u8', "w", encoding='utf-8') # 文件创建111文件
 key11 = video_url.replace('share', 'videos').replace('dash.madou.club', 'dash.madou.club/')
 fd.write(m3u8_url.replace(key11, '').replace('/ts.key', 'ts.key'))
 
