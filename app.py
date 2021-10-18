@@ -49,8 +49,8 @@ key11 = video_url.replace('share', 'videos').replace('dash.madou.club', 'dash.ma
 fd.write(m3u8_url.replace(key11, '').replace('/ts.key', 'ts.key'))
 
 # 下载ts
-# fd = open('down.sh', "w", encoding='utf-8')
-# fd.write(m3u8_url.replace('index','wget ' + key + '/index'))
+fd = open('down.sh', "w", encoding='utf-8')
+fd.write(m3u8_url.replace('index','wget ' + key + '/index'))
 
 # print(ftp.ftp(aaa))
 
