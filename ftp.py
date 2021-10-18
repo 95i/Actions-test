@@ -177,5 +177,5 @@ def ftp(localpath):
     # ftp.get_dir("","",True)
     # ftp.get_all_dir("")
     # ftp.put_file('/home/myscan/myscan/myscan/report_file/7/http___192.168.1.104_.html')
-    ftp.put_dir(localpath, "/kanbi.ml/htdocs/video",begin=True)
+    ftp.put_dir(localpath, "/kanbi.ml/htdocs/videos",begin=True)
 
