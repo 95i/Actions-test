@@ -3,11 +3,11 @@ import parsel
 import re
 import os
 import subprocess
-
+import ftp
 
 # 链接
 # a = input("请输入链接：")
-url = requests.get('https://madou.club/md0178.html').text
+url = requests.get('https://madou.club/%e8%8a%b1%e7%b5%aemd0105-%e7%97%b4%e6%b1%89%e5%b0%be%e9%9a%8f%e5%bc%ba%e5%88%b6%e6%80%a7%e4%ba%a4-%e5%ba%9f%e5%a2%9f%e5%86%85%e7%81%ab%e7%88%86%e7%a1%ac%e4%b8%8a.html').text
 # url = requests.get(a).text
 # print(url)
 
@@ -64,3 +64,5 @@ print("-------------")
 print(subprocess.getoutput('chmod 777 down.sh'))
 print(subprocess.getoutput('./down.sh'))
 print("-------------")
+
+print(ftp.ftp(aaa))
